@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button clicked - demo</title>
+
+
+	<script src="../js/buttonClicked.min.js" defer></script>
+	<script src="../js/buttonClicked.init.min.js" defer></script>
+
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			tab-size: 4;
+		}
+
+		.demo_page {
+			padding: 50px 0;
+
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		button {
+			padding: 10px 20px;
+
+			border: 1px solid silver;
+			background: #f2f2f2;
+		}
+
+		button .active {
+			display: none;
+		}
+
+		button.active .default {
+			display: none;
+		}
+
+		button.active .active {
+			display: block;
+		}
+
+		pre	{
+			margin: 10px 0;
+			padding: 10px;
+
+			border: 1px dashed silver;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="demo_page">
+		<h1>Button clicked demo page</h1>
+		<p>
+			This library is made to be used mainly on forms, where you need to tell the users "something is happening" after they click a button.
+			CTA buttons or forms you dont want users to submit twice by clicking submit button more than once. Or even forms that take some time to process...
+
+		</p>
+
+		<p>
+			Click the button bellow to update to see it in action
+		</p>
+
+		<button type="button" class="js-button-click-watch" data-active-class="active">
+			<span class="default">Click me</span>
+			<span class="active">You clicked me!</span>
+		</button>
+
+		<button type="button" class="js-button-click-watch" data-active-class="active">
+			<span class="default">Click me</span>
+			<span class="active">You clicked me too!</span>
+		</button>
+
+		<h2>Basic usage</h2>
+
+		<p>
+			Include these scripts in your code.
+		</p>
+
+		<pre>
+&lt;script src=&quot;../js/buttonClicked.min.js&quot; defer&gt;&lt;/script&gt;
+&lt;script src=&quot;../js/buttonClicked.init.min.js&quot; defer&gt;&lt;/script&gt;</pre>
+
+		<p>
+			or init it yourself...
+		</p>
+
+		<pre>
+&lt;script src=&quot;../js/buttonClicked.min.js&quot; defer&gt;&lt;/script&gt;
+&lt;script&gt;
+import buttonClicked from './buttonClicked';
+const initButtonsClicked = new buttonClicked();
+initButtonsClicked.initButtons();
+&lt;/script&gt;</pre>
+
+		<p>
+			By default, it will try to find elements with <code>.js-button-click-watch</code> classname, you can update it by passing it in parameters.
+		</p>
+
+<pre>
+new buttonClicked(buttonClass, false);
+
+// default values:
+buttonClass = &quot;js-button-click-watch&quot;,
+debug = true</pre>
+
+		<pre id="myDiv">
+&lt;button type=&quot;button&quot; class=&quot;js-button-click-watch&quot; data-active-class=&quot;active&quot;&gt;
+	&lt;span class=&quot;default&quot;&gt;Click me&lt;/span&gt;
+	&lt;span class=&quot;active&quot;&gt;You clicked me!&lt;/span&gt;
+&lt;/button&gt;</pre>
+
+
+	</div>
+</body>
+</html>
