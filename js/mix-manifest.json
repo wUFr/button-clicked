@@ -1,4 +1,6 @@
 {
     "/buttonClicked.init.min.js": "/buttonClicked.init.min.js",
-    "/buttonClicked.min.js": "/buttonClicked.min.js"
+    "/buttonClicked.min.js": "/buttonClicked.min.js",
+    "/docs/buttonClicked.min.js": "/docs/buttonClicked.min.js",
+    "/docs/buttonClicked.init.min.js": "/docs/buttonClicked.init.min.js"
 }

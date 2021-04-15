@@ -5,14 +5,14 @@ Tiny typescript lib which changes button state after its been clicked on.
 Usage:
 
 ```html
-<script src="../js/buttonClicked.min.js" defer></script>
-<script src="../js/buttonClicked.init.min.js" defer></script>
+<script src="./buttonClicked.min.js" defer></script>
+<script src="./buttonClicked.init.min.js" defer></script>
 ```
 
 or
 
 ```html
-<script src="../js/buttonClicked.min.js" defer></script>
+<script src="./buttonClicked.min.js" defer></script>
 <script>
 	import buttonClicked from './buttonClicked';
 	const bc = new buttonClicked();
