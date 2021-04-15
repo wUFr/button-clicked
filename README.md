@@ -1,5 +1,5 @@
 # button-clicked
-Tiny typescript lib that changes button state after its clicked.
+Tiny typescript lib which changes button state after its been clicked on.
 
 
 Usage:
