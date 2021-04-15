@@ -1,6 +1,8 @@
 # button-clicked
 Tiny typescript lib which changes button state after its been clicked on.
 
+Demo: https://wufr.github.io/button-clicked/
+
 
 Usage:
 
