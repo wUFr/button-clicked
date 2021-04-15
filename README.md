@@ -15,8 +15,8 @@ or
 <script src="../js/buttonClicked.min.js" defer></script>
 <script>
 	import buttonClicked from './buttonClicked';
-	const initButtonsClicked = new buttonClicked();
-	initButtonsClicked.initButtons();
+	const bc = new buttonClicked();
+	bc.initButtons();
 </script>
 ```
 
