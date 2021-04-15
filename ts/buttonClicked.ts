@@ -51,7 +51,12 @@ export default class buttonClicked {
 				button.classList.add("js-button-click-active")
 				const customClass: string|null = button.getAttribute("data-active-class")
 				if(customClass){
-					button.classList.add(customClass);
+					button.classList.add(customClass)
+				}
+
+				const ariaState: string|null = button.getAttribute("aria-pressed")
+				if(ariaState){
+					button.setAttribute("aria-pressed","true")
 				}
 			})
 		}

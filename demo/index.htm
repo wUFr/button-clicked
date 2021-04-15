@@ -64,12 +64,12 @@
 			Click the button bellow to update to see it in action
 		</p>
 
-		<button type="button" class="js-button-click-watch" data-active-class="active">
+		<button type="button" class="js-button-click-watch" data-active-class="active" aria-pressed="false">
 			<span class="default">Click me</span>
 			<span class="active">You clicked me!</span>
 		</button>
 
-		<button type="button" class="js-button-click-watch" data-active-class="active">
+		<button type="button" class="js-button-click-watch" data-active-class="active" aria-pressed="false">
 			<span class="default">Click me</span>
 			<span class="active">You clicked me too!</span>
 		</button>
@@ -101,7 +101,7 @@ initButtonsClicked.initButtons();
 		</p>
 
 <pre>
-new buttonClicked(buttonClass, false);
+new buttonClicked(buttonClass, debug);
 
 // default values:
 buttonClass = &quot;js-button-click-watch&quot;,
