@@ -11,10 +11,9 @@ Usage:
 <script src="./buttonClicked.init.min.js" defer></script>
 ```
 
-or
+or import as a module
 
 ```html
-<script src="./buttonClicked.min.js" defer></script>
 <script>
 	import buttonClicked from './buttonClicked';
 	const bc = new buttonClicked();
@@ -56,3 +55,7 @@ button.clicked .active {
 	display: block;
 }
 ```
+
+You can reset buttons state to default by clicking element with `.js-button-click-reset` classname.
+
+... better customization coming soon(tm)

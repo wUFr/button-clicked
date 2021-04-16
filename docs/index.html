@@ -61,7 +61,7 @@
 		</p>
 
 		<p>
-			Click the button bellow to update to see it in action
+			Click the button bellow to see it in action
 		</p>
 
 		<button type="button" class="js-button-click-watch" data-active-class="active" aria-pressed="false">
@@ -85,11 +85,10 @@
 &lt;script src=&quot;./buttonClicked.init.min.js&quot; defer&gt;&lt;/script&gt;</pre>
 
 		<p>
-			or init it yourself...
+			or import as a module
 		</p>
 
 		<pre>
-&lt;script src=&quot;./buttonClicked.min.js&quot; defer&gt;&lt;/script&gt;
 &lt;script&gt;
 import buttonClicked from './buttonClicked';
 const bc = new buttonClicked();
@@ -107,11 +106,20 @@ new buttonClicked(buttonClass, debug);
 buttonClass = &quot;js-button-click-watch&quot;,
 debug = true</pre>
 
-		<pre id="myDiv">
+		<pre>
 &lt;button type=&quot;button&quot; class=&quot;js-button-click-watch&quot; data-active-class=&quot;active&quot;&gt;
 	&lt;span class=&quot;default&quot;&gt;Click me&lt;/span&gt;
 	&lt;span class=&quot;active&quot;&gt;You clicked me!&lt;/span&gt;
 &lt;/button&gt;</pre>
+
+		<p>
+			You can reset buttons state to default via element with <code>js-button-click-reset</code> classname.
+			Click 2 buttons above, then click on reset button bellow to see it in action.
+		</p>
+
+		<button type="button" class="js-button-click-reset">Reset buttons above to default</button>
+
+
 
 
 	</div>
