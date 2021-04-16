@@ -18,6 +18,7 @@ or import as a module
 	import buttonClicked from './buttonClicked';
 	const bc = new buttonClicked();
 	bc.initButtons();
+	bc.initResetButtons();
 </script>
 ```
 
