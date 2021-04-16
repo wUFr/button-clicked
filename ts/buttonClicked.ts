@@ -50,10 +50,14 @@ export default class buttonClicked {
 		for (const button of this.buttonElements as any){
 			// PREVENT DOUBLE-INIT WHICH WOULD RESULT IN CALLING THIS CODE TWICE OR MORE
 			if(button.classList.contains("-js-button-click-init")){
-				return
+				continue
 			}
 
 			button.classList.add("-js-button-click-init")
+
+			if(this.debug){
+				console.log("buttonClicked - initButtons(): init", button)
+			}
 
 			button.addEventListener("click", () => {
 				// SET DEFAULT STATE CLASS
@@ -95,10 +99,14 @@ export default class buttonClicked {
 		for (const resetButton of this.buttonResetElements as any){
 			// PREVENT DOUBLE-INIT WHICH WOULD RESULT IN CALLING THIS CODE TWICE OR MORE
 			if(resetButton.classList.contains("-js-button-click-init")){
-				return
+				continue
 			}
 
 			resetButton.classList.add("-js-button-click-init")
+
+			if(this.debug){
+				console.log("buttonClicked - resetState(): init reset", resetButton)
+			}
 
 			resetButton.addEventListener("click", () => {
 				if(this.buttonElements.length){

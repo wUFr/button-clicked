@@ -13,4 +13,5 @@ import buttonClicked from './buttonClicked';
 
 const initButtonsClicked = new buttonClicked();
 initButtonsClicked.initButtons();
+initButtonsClicked.initButtons();
 initButtonsClicked.initResetButtons();
