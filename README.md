@@ -14,12 +14,12 @@ Usage:
 or import as a module
 
 ```html
-<script>
-	import buttonClicked from './buttonClicked';
-	const bc = new buttonClicked();
-	bc.initButtons();
-	bc.initResetButtons();
-</script>
+
+import buttonClicked from './buttonClicked';
+const bc = new buttonClicked();
+bc.initButtons();
+bc.initResetButtons();
+
 ```
 
 
