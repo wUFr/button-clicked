@@ -13,13 +13,11 @@ Usage:
 
 or import as a module
 
-```html
-
+```js
 import buttonClicked from './buttonClicked';
 const bc = new buttonClicked();
 bc.initButtons();
 bc.initResetButtons();
-
 ```
 
 
